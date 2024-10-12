@@ -1,0 +1,385 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red: #f00000;
+    --boder: hsla(0,0%,100%,.5);
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clear{
+    clear: both;
+}
+
+#header{
+    height: 91px;
+    width: 100%;
+    background-color: var(--red);
+    position: relative;
+    z-index: 1;
+}
+
+
+#nav_header{
+    display: flex;
+}
+
+#nav_header, .sub_nav_header{
+    list-style-type: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+#menu_header{
+    width: 100%;
+    max-width: 2000px;
+    background-color: var(--red);
+    height: 91px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#header .ars_logo_mobile{
+    display: none;
+}
+#menu_header .ars_logo{
+    height: 100px;
+    width: 100px;
+    background-size: 100%;
+    display: block;
+}
+#nav_header > li > a{
+    color: #fff;    
+    line-height: 90px;
+    font-weight: 700;
+}
+#menu_header #nav_header li a{
+    text-decoration: none;
+    padding-right: 28px;
+    padding-left: 5px;
+}
+
+
+.sub_nav_header{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px; 
+    width: 300%;
+    height: 200px;
+    margin-top: 5px;
+}
+
+.sub_nav_header a:hover{
+    background-color: var(--boder);
+    border-bottom: red solid 5px;
+}
+
+.sub_nav_header a{
+    color: black;
+    display: block; 
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.sub_nav_header a::first-letter{
+    content: "";
+    color: red;
+    text-transform: uppercase;
+}
+#nav_header > li:hover .sub_nav_header{
+    display: block;
+}
+#nav_header > li:hover {
+    background-color: var(--boder);
+    border-bottom: red solid 5px;
+    border-radius: 5px;
+}
+
+#nav_mobile_header{
+    display: none;
+}
+#nav_header .nav_header_down{
+    font-size: 12px;
+}
+
+#menu_header .search-button{
+    line-height: 96px;
+
+}
+#menu_header .search-button:hover,
+.nav_moblie_menu:hover{
+    background-color: var(--boder);
+    border-bottom: red solid 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#menu_header .search-icon{
+    color: white;
+    font-size: 30px;
+}
+#menu_header > #nav_header > li{
+    display: inline-block;
+    position: relative;
+}
+#slider{
+    width: 100%;
+    padding-top: 50%;
+    background: url('/The\ Arsenal/asssets/img/pexels-huy-phan-17160693.jpg');
+    background-repeat: no-repeat;
+    background-position:  top center;
+    background-size: cover;
+    position: relative;
+}
+
+#slider .title-slider{
+    position: absolute;
+    text-align: center;
+    width: 20%;
+    font-size: 60px;
+    color: white;
+    bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#container .section-content {
+    padding-top: 64px;
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto ;
+}
+
+#container .section-heading{
+    color: var(--red);
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+#container .sub-section-heading{
+    font-style: italic;
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+#container .section-heading,
+#container .sub-section-heading{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#container .about-content{
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center; 
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container .about_contact{
+    width: 100%;
+    margin: 0 auto;
+}
+#container .img-arsenalteam{
+    padding-top: 10px;
+    width: 100%;
+    border-radius: 15px ;
+
+}
+#container .img-content{
+    margin: 0 auto;
+}
+
+#container .img-arsenalteam:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#container .about_contact{
+    background-image: linear-gradient(0deg,rgba(23, 32, 48,0.8), rgba(23, 32, 48,0.8)), url(https://www.arsenal.com/sites/default/files/styles/link_image_extra_large/public/images/highbury_1936_0.jpg?auto=webp&itok=hzybaahY);
+    background-position: center;
+    color: #fff !important;
+    width: 100%;
+    padding: 0;
+}
+
+#container .box_properties{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+#container .member-list{
+
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+}
+#container .member-contact{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#container .img_contact{
+    width: 100%;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+
+#container .name-contact{
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+
+#container .background_ticket{
+    background: black;
+    color: white;
+    margin: 0 auto;
+}
+#container .background_ticket .section-content {
+    padding-top: 64px;
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto ;
+}
+#container .background_ticket .ticket_list{
+    background: white;
+    color: black;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#container .background_ticket {
+    background: black;
+    color: white;
+}
+
+.ticket_list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px #ddd solid;
+}
+
+.ticket_list li .sold-out{
+    margin-left: 20px;
+    background-color: #f00000;
+    padding: 3px;
+    color: white;
+}
+
+.ticket_list li .Quantity{
+    float: right;
+    background-color: black;
+    padding: 3px;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#container .list-ticket {
+    justify-content:center;
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+#container .box-ticket{
+    margin: auto;
+}
+#container .list-card {
+    justify-content:center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#container .background_ticket .ticket_list {
+    background: white;
+    color: black;
+    width: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#container .ticket-list{
+    list-style: none;
+    width: 0;
+}
+
+.img_ticket{
+    width: 100%;
+    padding: 0;
+}
+
+#container .card {
+    background-color: #ddd;
+    padding: 0;
+    border: 0;
+}
+
+.nav_moblie_menu{
+    display: none;
+}
+
+#container .btn-primary-ticket{
+    background-color: var(--red);
+}
+
+.show{
+    display: block !important;
+}
+.nav_mobile_header {
+    display: none;
+    width: 100%;
+    background-color: var(--red);
+    margin-top: -1px;
+}
+#list_mobile_header > li > a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+#list_mobile_header > li {
+    list-style: none;
+    padding: 12px;
+}
+
+@media screen and (max-width: 1350px)  {
+    #menu_header {
+        display: none;
+    }
+    #header  .nav_moblie_menu {
+        padding: 0 21px;
+        display: block;
+        margin-left: auto;
+    }
+    #header .ars_logo_mobile {
+        width: 60px;
+        line-height: 0px;
+        display: block;
+    }
+    #header .menu_icon{
+        color: #ddd;
+        font-size: 20px;
+        line-height: 60px;
+    }
+    #header{
+        height: 70px;
+        z-index: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .title-slider{
+        display: none;
+    }
+}
+
